@@ -1,0 +1,1136 @@
+{
+  "title": "QSP exact-tier 120-day retrospective",
+  "benchmark_date_local": "2026-11-25",
+  "as_of_baseline_date_local": "2026-07-28",
+  "baseline_commit_date": "2026-07-20T22:20:53-07:00",
+  "candidate_commit_date": "2026-11-25T15:04:56-08:00",
+  "merged_main_commit": "e18fe691e7fa0dc184549da852f268f933094c6e",
+  "tree_at_candidate_and_merged_main": "e452ae24d335f78346283562de004b0310152e6e",
+  "next_main_first_parent_commit_after_baseline": "41a8e2d48bf108645166f0f67324b66528c8c0a0",
+  "cpu": "AMD Ryzen 7 9700X 8-Core Processor",
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "timing": "Each cell pools 10 dispatch/solve wall-clock samples from two fresh processes and reports their median. Independent oracle, verification and interpreter initialization are outside the timed region.",
+  "speedup": "Baseline median divided by candidate median on instances where every run passed verification on both revisions; geometric mean weights each eligible case equally.",
+  "baseline": "c93293748678390206ac4462439a4b47d117c97e",
+  "candidate": "d5b6f2c73220cb4a069a6aea8fc40d2332cf30a7",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.14.5",
+  "numpy": "2.4.6",
+  "repeats_per_process": 5,
+  "order": [
+    "july",
+    "november",
+    "november",
+    "july"
+  ],
+  "n_comparable": 8,
+  "comparable_geometric_mean": 59.25075035607358,
+  "harness_sha256": "40cb97cb77cb1e1d153f4fb53d507f00c5de0c197543cadd3a2077410378e672",
+  "rows": [
+    {
+      "case": "dense_symmetric_12",
+      "variables": 12,
+      "optimum": -120.0,
+      "exact_ratio": "-120/1",
+      "oracle": "scalar exhaustive integer oracle",
+      "july_pass": true,
+      "november_pass": true,
+      "july_ms": 4.862399999865374,
+      "november_ms": 0.12915000002067245,
+      "verified_speedup": 37.64924505681047,
+      "july_issues": "",
+      "november_issues": ""
+    },
+    {
+      "case": "dense_symmetric_16",
+      "variables": 16,
+      "optimum": -136.0,
+      "exact_ratio": "-136/1",
+      "oracle": "exhaustive split integer oracle",
+      "july_pass": true,
+      "november_pass": true,
+      "july_ms": 77.06230000007963,
+      "november_ms": 0.2800499999011663,
+      "verified_speedup": 275.1733619970578,
+      "july_issues": "",
+      "november_issues": ""
+    },
+    {
+      "case": "dense_symmetric_20",
+      "variables": 20,
+      "optimum": -295.0,
+      "exact_ratio": "-295/1",
+      "oracle": "exhaustive split integer oracle",
+      "july_pass": true,
+      "november_pass": true,
+      "july_ms": 1224.42204999993,
+      "november_ms": 1.7099000001508102,
+      "verified_speedup": 716.0781624024436,
+      "july_issues": "",
+      "november_issues": ""
+    },
+    {
+      "case": "dense_fractional_18",
+      "variables": 18,
+      "optimum": -25.382409600773123,
+      "exact_ratio": "-14631962933735312782/576460752303423488",
+      "oracle": "exhaustive split integer oracle",
+      "july_pass": true,
+      "november_pass": true,
+      "july_ms": 311.670900000081,
+      "november_ms": 17.76730000005955,
+      "verified_speedup": 17.541826839139116,
+      "july_issues": "",
+      "november_issues": ""
+    },
+    {
+      "case": "path_13",
+      "variables": 13,
+      "optimum": -12.0,
+      "exact_ratio": "-12/1",
+      "oracle": "graph formula",
+      "july_pass": true,
+      "november_pass": true,
+      "july_ms": 9.606050000002142,
+      "november_ms": 0.14580000015484984,
+      "verified_speedup": 65.88511652811962,
+      "july_issues": "",
+      "november_issues": ""
+    },
+    {
+      "case": "complete_14",
+      "variables": 14,
+      "optimum": -49.0,
+      "exact_ratio": "-49/1",
+      "oracle": "graph formula",
+      "july_pass": true,
+      "november_pass": true,
+      "july_ms": 19.941149999795016,
+      "november_ms": 0.1647500000672153,
+      "verified_speedup": 121.03884668685495,
+      "july_issues": "",
+      "november_issues": ""
+    },
+    {
+      "case": "sparse_maxcut_12",
+      "variables": 12,
+      "optimum": -15.0,
+      "exact_ratio": "-15/1",
+      "oracle": "scalar exhaustive integer oracle",
+      "july_pass": true,
+      "november_pass": true,
+      "july_ms": 4.791049999766983,
+      "november_ms": 0.10814999973263184,
+      "verified_speedup": 44.30004633944896,
+      "july_issues": "",
+      "november_issues": ""
+    },
+    {
+      "case": "weak_penalty_one_hot",
+      "variables": 3,
+      "optimum": -12.0,
+      "exact_ratio": "-12/1",
+      "oracle": "scalar exhaustive integer oracle",
+      "july_pass": false,
+      "november_pass": true,
+      "july_ms": 0.027450000061435276,
+      "november_ms": 0.060600000324484427,
+      "verified_speedup": null,
+      "july_issues": "missing feasible optimum (constraints_violated)",
+      "november_issues": ""
+    },
+    {
+      "case": "asymmetric_6",
+      "variables": 6,
+      "optimum": -18.0,
+      "exact_ratio": "-18/1",
+      "oracle": "scalar exhaustive integer oracle",
+      "july_pass": false,
+      "november_pass": true,
+      "july_ms": 0.08040000011533266,
+      "november_ms": 0.03534999996190891,
+      "verified_speedup": null,
+      "july_issues": "reported=3.0, witness=3.0, expected=-18.0",
+      "november_issues": ""
+    },
+    {
+      "case": "asymmetric_7",
+      "variables": 7,
+      "optimum": -41.0,
+      "exact_ratio": "-41/1",
+      "oracle": "scalar exhaustive integer oracle",
+      "july_pass": true,
+      "november_pass": true,
+      "july_ms": 0.1537999999072781,
+      "november_ms": 0.04654999997910636,
+      "verified_speedup": 3.3039742207585423,
+      "july_issues": "",
+      "november_issues": ""
+    },
+    {
+      "case": "asymmetric_8",
+      "variables": 8,
+      "optimum": -23.0,
+      "exact_ratio": "-23/1",
+      "oracle": "scalar exhaustive integer oracle",
+      "july_pass": false,
+      "november_pass": true,
+      "july_ms": 0.3191499999957159,
+      "november_ms": 0.0545499999589083,
+      "verified_speedup": null,
+      "july_issues": "reported=-8.0, witness=-8.0, expected=-23.0",
+      "november_issues": ""
+    },
+    {
+      "case": "asymmetric_9",
+      "variables": 9,
+      "optimum": -31.0,
+      "exact_ratio": "-31/1",
+      "oracle": "scalar exhaustive integer oracle",
+      "july_pass": false,
+      "november_pass": true,
+      "july_ms": 0.6138500000361091,
+      "november_ms": 0.06524999980683788,
+      "verified_speedup": null,
+      "july_issues": "reported=-20.0, witness=-20.0, expected=-31.0",
+      "november_issues": ""
+    }
+  ],
+  "raw_runs": [
+    {
+      "sequence": 1,
+      "revision": "july",
+      "solver": "exact_enumeration",
+      "python": "3.14.5",
+      "numpy": "2.4.6",
+      "repeats": 5,
+      "passed": 8,
+      "total": 12,
+      "cases": [
+        {
+          "case": "dense_symmetric_12",
+          "n": 12,
+          "expected_minimum": -120.0,
+          "exact_minimum_ratio": "-120/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.013882200000352896,
+          "solve_seconds": [
+            0.005801899999823945,
+            0.004732800000056159,
+            0.005038899999817659,
+            0.004738300000099116,
+            0.0047429000001102395
+          ],
+          "median_solve_seconds": 0.0047429000001102395,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "dense_symmetric_16",
+          "n": 16,
+          "expected_minimum": -136.0,
+          "exact_minimum_ratio": "-136/1",
+          "oracle": "exhaustive split integer oracle",
+          "oracle_seconds": 0.0004481000000851054,
+          "solve_seconds": [
+            0.07580689999986134,
+            0.07565539999995963,
+            0.0757315999999264,
+            0.07516589999977441,
+            0.07493549999981042
+          ],
+          "median_solve_seconds": 0.07565539999995963,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "dense_symmetric_20",
+          "n": 20,
+          "expected_minimum": -295.0,
+          "exact_minimum_ratio": "-295/1",
+          "oracle": "exhaustive split integer oracle",
+          "oracle_seconds": 0.005504299999756768,
+          "solve_seconds": [
+            1.2021591000002445,
+            1.2241073999998662,
+            1.224736699999994,
+            1.3027228999999352,
+            1.2408252999998695
+          ],
+          "median_solve_seconds": 1.224736699999994,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "dense_fractional_18",
+          "n": 18,
+          "expected_minimum": -25.382409600773123,
+          "exact_minimum_ratio": "-14631962933735312782/576460752303423488",
+          "oracle": "exhaustive split integer oracle",
+          "oracle_seconds": 0.07672869999987597,
+          "solve_seconds": [
+            0.31500629999982266,
+            0.3209888999999748,
+            0.30256390000022293,
+            0.31360940000013215,
+            0.31527760000017224
+          ],
+          "median_solve_seconds": 0.31500629999982266,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "path_13",
+          "n": 13,
+          "expected_minimum": -12.0,
+          "exact_minimum_ratio": "-12/1",
+          "oracle": "graph formula",
+          "oracle_seconds": 1.0999997357430402e-06,
+          "solve_seconds": [
+            0.009574700000030134,
+            0.009622000000035769,
+            0.010882600000059028,
+            0.010171900000386813,
+            0.009988000000248576
+          ],
+          "median_solve_seconds": 0.009988000000248576,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "complete_14",
+          "n": 14,
+          "expected_minimum": -49.0,
+          "exact_minimum_ratio": "-49/1",
+          "oracle": "graph formula",
+          "oracle_seconds": 1.8000000636675395e-06,
+          "solve_seconds": [
+            0.0200009999998656,
+            0.020567700000356126,
+            0.02740410000023985,
+            0.021345199999814213,
+            0.020815200000015466
+          ],
+          "median_solve_seconds": 0.020815200000015466,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "sparse_maxcut_12",
+          "n": 12,
+          "expected_minimum": -15.0,
+          "exact_minimum_ratio": "-15/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.004471300000204792,
+          "solve_seconds": [
+            0.005974500000320404,
+            0.004853599999933067,
+            0.00512269999990167,
+            0.005273600000236911,
+            0.004985600000054546
+          ],
+          "median_solve_seconds": 0.00512269999990167,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "weak_penalty_one_hot",
+          "n": 3,
+          "expected_minimum": -12.0,
+          "exact_minimum_ratio": "-12/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 2.27999998969608e-05,
+          "solve_seconds": [
+            5.94000002820394e-05,
+            3.510000033202232e-05,
+            2.6400000024295878e-05,
+            2.5800000003073364e-05,
+            2.8500000098574674e-05
+          ],
+          "median_solve_seconds": 2.8500000098574674e-05,
+          "passed": false,
+          "issues": [
+            "missing feasible optimum (constraints_violated)"
+          ]
+        },
+        {
+          "case": "asymmetric_6",
+          "n": 6,
+          "expected_minimum": -18.0,
+          "exact_minimum_ratio": "-18/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 9.69999996414117e-05,
+          "solve_seconds": [
+            8.879999995770049e-05,
+            8.209999987229821e-05,
+            8.060000027398928e-05,
+            8.019999995667604e-05,
+            8.589999970354256e-05
+          ],
+          "median_solve_seconds": 8.209999987229821e-05,
+          "passed": false,
+          "issues": [
+            "reported=3.0, witness=3.0, expected=-18.0"
+          ]
+        },
+        {
+          "case": "asymmetric_7",
+          "n": 7,
+          "expected_minimum": -41.0,
+          "exact_minimum_ratio": "-41/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.0002193000000261236,
+          "solve_seconds": [
+            0.00015940000002956367,
+            0.00015419999999721767,
+            0.0001536999998279498,
+            0.00015720000010333024,
+            0.00017979999984163442
+          ],
+          "median_solve_seconds": 0.00015720000010333024,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "asymmetric_8",
+          "n": 8,
+          "expected_minimum": -23.0,
+          "exact_minimum_ratio": "-23/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.0005352999996830476,
+          "solve_seconds": [
+            0.0003478999997241772,
+            0.0004258000003574125,
+            0.0004538999996839266,
+            0.00048770000012154924,
+            0.0003127999998469022
+          ],
+          "median_solve_seconds": 0.0004258000003574125,
+          "passed": false,
+          "issues": [
+            "reported=-8.0, witness=-8.0, expected=-23.0"
+          ]
+        },
+        {
+          "case": "asymmetric_9",
+          "n": 9,
+          "expected_minimum": -31.0,
+          "exact_minimum_ratio": "-31/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.0011689000002661487,
+          "solve_seconds": [
+            0.0007360999998127227,
+            0.0006414000004042464,
+            0.0007112000002962304,
+            0.0006641999998464598,
+            0.0006318000000646862
+          ],
+          "median_solve_seconds": 0.0006641999998464598,
+          "passed": false,
+          "issues": [
+            "reported=-20.0, witness=-20.0, expected=-31.0"
+          ]
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "revision": "november",
+      "solver": "exact_enumeration",
+      "python": "3.14.5",
+      "numpy": "2.4.6",
+      "repeats": 5,
+      "passed": 12,
+      "total": 12,
+      "cases": [
+        {
+          "case": "dense_symmetric_12",
+          "n": 12,
+          "expected_minimum": -120.0,
+          "exact_minimum_ratio": "-120/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.013994200000070123,
+          "solve_seconds": [
+            0.0002598000000944012,
+            0.00014330000021800515,
+            0.00011670000003505265,
+            0.00011130000029879739,
+            0.00010730000030889641
+          ],
+          "median_solve_seconds": 0.00011670000003505265,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "dense_symmetric_16",
+          "n": 16,
+          "expected_minimum": -136.0,
+          "exact_minimum_ratio": "-136/1",
+          "oracle": "exhaustive split integer oracle",
+          "oracle_seconds": 0.0004527000000962289,
+          "solve_seconds": [
+            0.00031669999998484855,
+            0.0002804999999170832,
+            0.0002795999998852494,
+            0.0002703000000110478,
+            0.00026879999995799153
+          ],
+          "median_solve_seconds": 0.0002795999998852494,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "dense_symmetric_20",
+          "n": 20,
+          "expected_minimum": -295.0,
+          "exact_minimum_ratio": "-295/1",
+          "oracle": "exhaustive split integer oracle",
+          "oracle_seconds": 0.005844899999829067,
+          "solve_seconds": [
+            0.0018506999999772233,
+            0.0017322999997304578,
+            0.0017118000000664324,
+            0.0016979000001811073,
+            0.001708000000235188
+          ],
+          "median_solve_seconds": 0.0017118000000664324,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "dense_fractional_18",
+          "n": 18,
+          "expected_minimum": -25.382409600773123,
+          "exact_minimum_ratio": "-14631962933735312782/576460752303423488",
+          "oracle": "exhaustive split integer oracle",
+          "oracle_seconds": 0.08278150000023743,
+          "solve_seconds": [
+            0.01782469999989189,
+            0.017617400000290218,
+            0.017383299999892188,
+            0.017377099999976053,
+            0.017238699999779783
+          ],
+          "median_solve_seconds": 0.017383299999892188,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "path_13",
+          "n": 13,
+          "expected_minimum": -12.0,
+          "exact_minimum_ratio": "-12/1",
+          "oracle": "graph formula",
+          "oracle_seconds": 2.7000000955013093e-06,
+          "solve_seconds": [
+            0.00019939999992857338,
+            0.00014760000021851738,
+            0.00013330000001587905,
+            0.00019880000036209822,
+            0.00014529999998558196
+          ],
+          "median_solve_seconds": 0.00014760000021851738,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "complete_14",
+          "n": 14,
+          "expected_minimum": -49.0,
+          "exact_minimum_ratio": "-49/1",
+          "oracle": "graph formula",
+          "oracle_seconds": 8.000001798791345e-07,
+          "solve_seconds": [
+            0.00017030000026352354,
+            0.00016830000004119938,
+            0.00016090000008261995,
+            0.00016110000024127658,
+            0.0001578999999765074
+          ],
+          "median_solve_seconds": 0.00016110000024127658,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "sparse_maxcut_12",
+          "n": 12,
+          "expected_minimum": -15.0,
+          "exact_minimum_ratio": "-15/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.003998199999841745,
+          "solve_seconds": [
+            0.000152900000102818,
+            0.00011220000033063116,
+            0.00010479999991730438,
+            0.00010440000005473848,
+            0.00010250000013911631
+          ],
+          "median_solve_seconds": 0.00010479999991730438,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "weak_penalty_one_hot",
+          "n": 3,
+          "expected_minimum": -12.0,
+          "exact_minimum_ratio": "-12/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 1.8000000181928044e-05,
+          "solve_seconds": [
+            0.0012536999997792009,
+            0.00010029999975813553,
+            4.830000034417026e-05,
+            3.820000029008952e-05,
+            3.7199999951553764e-05
+          ],
+          "median_solve_seconds": 4.830000034417026e-05,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "asymmetric_6",
+          "n": 6,
+          "expected_minimum": -18.0,
+          "exact_minimum_ratio": "-18/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 9.380000028613722e-05,
+          "solve_seconds": [
+            4.549999994196696e-05,
+            3.749999996216502e-05,
+            3.51999997292296e-05,
+            3.4700000014709076e-05,
+            3.400000014153193e-05
+          ],
+          "median_solve_seconds": 3.51999997292296e-05,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "asymmetric_7",
+          "n": 7,
+          "expected_minimum": -41.0,
+          "exact_minimum_ratio": "-41/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.0002137000001312117,
+          "solve_seconds": [
+            4.959999978382257e-05,
+            4.529999978331034e-05,
+            4.309999985707691e-05,
+            4.219999982524314e-05,
+            4.200000012133387e-05
+          ],
+          "median_solve_seconds": 4.309999985707691e-05,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "asymmetric_8",
+          "n": 8,
+          "expected_minimum": -23.0,
+          "exact_minimum_ratio": "-23/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.0004986999997527164,
+          "solve_seconds": [
+            5.620000001727021e-05,
+            5.919999966863543e-05,
+            5.1699999858101364e-05,
+            5.0600000122358324e-05,
+            5.019999980504508e-05
+          ],
+          "median_solve_seconds": 5.1699999858101364e-05,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "asymmetric_9",
+          "n": 9,
+          "expected_minimum": -31.0,
+          "exact_minimum_ratio": "-31/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.0011389000001145178,
+          "solve_seconds": [
+            6.859999984953902e-05,
+            6.48999998702493e-05,
+            0.00010160000010728254,
+            8.030000026337802e-05,
+            6.559999974342645e-05
+          ],
+          "median_solve_seconds": 6.859999984953902e-05,
+          "passed": true,
+          "issues": []
+        }
+      ]
+    },
+    {
+      "sequence": 3,
+      "revision": "november",
+      "solver": "exact_enumeration",
+      "python": "3.14.5",
+      "numpy": "2.4.6",
+      "repeats": 5,
+      "passed": 12,
+      "total": 12,
+      "cases": [
+        {
+          "case": "dense_symmetric_12",
+          "n": 12,
+          "expected_minimum": -120.0,
+          "exact_minimum_ratio": "-120/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.013972799999919516,
+          "solve_seconds": [
+            0.0002961999998660758,
+            0.00030919999971956713,
+            0.00014160000000629225,
+            0.00011300000005576294,
+            0.00010819999988598283
+          ],
+          "median_solve_seconds": 0.00014160000000629225,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "dense_symmetric_16",
+          "n": 16,
+          "expected_minimum": -136.0,
+          "exact_minimum_ratio": "-136/1",
+          "oracle": "exhaustive split integer oracle",
+          "oracle_seconds": 0.0004455000002963061,
+          "solve_seconds": [
+            0.0003142999998999585,
+            0.00037250000013955287,
+            0.0002874000001611421,
+            0.00027399999999033753,
+            0.0002696999999898253
+          ],
+          "median_solve_seconds": 0.0002874000001611421,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "dense_symmetric_20",
+          "n": 20,
+          "expected_minimum": -295.0,
+          "exact_minimum_ratio": "-295/1",
+          "oracle": "exhaustive split integer oracle",
+          "oracle_seconds": 0.005765299999893614,
+          "solve_seconds": [
+            0.0018579000002318935,
+            0.001815800000258605,
+            0.0016172000000551634,
+            0.0015628999999535154,
+            0.0016763000003265915
+          ],
+          "median_solve_seconds": 0.0016763000003265915,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "dense_fractional_18",
+          "n": 18,
+          "expected_minimum": -25.382409600773123,
+          "exact_minimum_ratio": "-14631962933735312782/576460752303423488",
+          "oracle": "exhaustive split integer oracle",
+          "oracle_seconds": 0.07830850000027567,
+          "solve_seconds": [
+            0.017709900000227208,
+            0.018556900000021415,
+            0.018004799999744137,
+            0.018137600000045495,
+            0.0194072999997843
+          ],
+          "median_solve_seconds": 0.018137600000045495,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "path_13",
+          "n": 13,
+          "expected_minimum": -12.0,
+          "exact_minimum_ratio": "-12/1",
+          "oracle": "graph formula",
+          "oracle_seconds": 1.0999997357430402e-06,
+          "solve_seconds": [
+            0.0002279999998791027,
+            0.00014630000032411772,
+            0.00013429999989966745,
+            0.00013110000008964562,
+            0.0001305000000684231
+          ],
+          "median_solve_seconds": 0.00013429999989966745,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "complete_14",
+          "n": 14,
+          "expected_minimum": -49.0,
+          "exact_minimum_ratio": "-49/1",
+          "oracle": "graph formula",
+          "oracle_seconds": 7.000003279244993e-07,
+          "solve_seconds": [
+            0.0001726000000417116,
+            0.00016589999995630933,
+            0.00016360000017812126,
+            0.00016140000025188783,
+            0.00018050000016955892
+          ],
+          "median_solve_seconds": 0.00016589999995630933,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "sparse_maxcut_12",
+          "n": 12,
+          "expected_minimum": -15.0,
+          "exact_minimum_ratio": "-15/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.0042128000000047905,
+          "solve_seconds": [
+            0.00016289999985019676,
+            0.00011720000020432053,
+            0.00010679999968488119,
+            0.00010489999976925901,
+            0.0001094999997803825
+          ],
+          "median_solve_seconds": 0.0001094999997803825,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "weak_penalty_one_hot",
+          "n": 3,
+          "expected_minimum": -12.0,
+          "exact_minimum_ratio": "-12/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 1.7299999854003545e-05,
+          "solve_seconds": [
+            0.00011700000004566391,
+            9.330000011686934e-05,
+            7.29000003047986e-05,
+            4.360000002634479e-05,
+            3.90000000152213e-05
+          ],
+          "median_solve_seconds": 7.29000003047986e-05,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "asymmetric_6",
+          "n": 6,
+          "expected_minimum": -18.0,
+          "exact_minimum_ratio": "-18/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 9.4600000011269e-05,
+          "solve_seconds": [
+            4.470000021683518e-05,
+            3.7400000110210385e-05,
+            3.550000019458821e-05,
+            3.460000016275444e-05,
+            3.4499999856052455e-05
+          ],
+          "median_solve_seconds": 3.550000019458821e-05,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "asymmetric_7",
+          "n": 7,
+          "expected_minimum": -41.0,
+          "exact_minimum_ratio": "-41/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.00022320000016406993,
+          "solve_seconds": [
+            9.270000009564683e-05,
+            6.660000008196221e-05,
+            4.780000017490238e-05,
+            4.910000006930204e-05,
+            4.2800000301213004e-05
+          ],
+          "median_solve_seconds": 4.910000006930204e-05,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "asymmetric_8",
+          "n": 8,
+          "expected_minimum": -23.0,
+          "exact_minimum_ratio": "-23/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.0006203999996614584,
+          "solve_seconds": [
+            8.780000007391209e-05,
+            5.979999968985794e-05,
+            5.289999990054639e-05,
+            5.11000002916262e-05,
+            6.349999966914766e-05
+          ],
+          "median_solve_seconds": 5.979999968985794e-05,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "asymmetric_9",
+          "n": 9,
+          "expected_minimum": -31.0,
+          "exact_minimum_ratio": "-31/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.0011439000004429545,
+          "solve_seconds": [
+            7.260000029418734e-05,
+            6.48999998702493e-05,
+            6.17999999121821e-05,
+            6.100000018705032e-05,
+            6.480000001829467e-05
+          ],
+          "median_solve_seconds": 6.480000001829467e-05,
+          "passed": true,
+          "issues": []
+        }
+      ]
+    },
+    {
+      "sequence": 4,
+      "revision": "july",
+      "solver": "exact_enumeration",
+      "python": "3.14.5",
+      "numpy": "2.4.6",
+      "repeats": 5,
+      "passed": 8,
+      "total": 12,
+      "cases": [
+        {
+          "case": "dense_symmetric_12",
+          "n": 12,
+          "expected_minimum": -120.0,
+          "exact_minimum_ratio": "-120/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.01696620000029725,
+          "solve_seconds": [
+            0.006392700000105833,
+            0.004862899999807269,
+            0.00486189999992348,
+            0.0049942999999075255,
+            0.004783899999893038
+          ],
+          "median_solve_seconds": 0.004862899999807269,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "dense_symmetric_16",
+          "n": 16,
+          "expected_minimum": -136.0,
+          "exact_minimum_ratio": "-136/1",
+          "oracle": "exhaustive split integer oracle",
+          "oracle_seconds": 0.0004488999998102372,
+          "solve_seconds": [
+            0.07858969999961118,
+            0.07866250000006403,
+            0.07831770000029792,
+            0.07982569999967382,
+            0.07988650000015696
+          ],
+          "median_solve_seconds": 0.07866250000006403,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "dense_symmetric_20",
+          "n": 20,
+          "expected_minimum": -295.0,
+          "exact_minimum_ratio": "-295/1",
+          "oracle": "exhaustive split integer oracle",
+          "oracle_seconds": 0.005876400000033755,
+          "solve_seconds": [
+            1.2988953999997648,
+            1.206753899999967,
+            1.2346471000000747,
+            1.2157904999999118,
+            1.2044545000003382
+          ],
+          "median_solve_seconds": 1.2157904999999118,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "dense_fractional_18",
+          "n": 18,
+          "expected_minimum": -25.382409600773123,
+          "exact_minimum_ratio": "-14631962933735312782/576460752303423488",
+          "oracle": "exhaustive split integer oracle",
+          "oracle_seconds": 0.076606399999946,
+          "solve_seconds": [
+            0.3005797999999231,
+            0.2998953999999685,
+            0.30369130000008226,
+            0.3097324000000299,
+            0.3147871999999552
+          ],
+          "median_solve_seconds": 0.30369130000008226,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "path_13",
+          "n": 13,
+          "expected_minimum": -12.0,
+          "exact_minimum_ratio": "-12/1",
+          "oracle": "graph formula",
+          "oracle_seconds": 1.3999997463542968e-06,
+          "solve_seconds": [
+            0.009590099999968515,
+            0.00955389999990075,
+            0.009469800000260875,
+            0.009983599999941362,
+            0.009367999999994936
+          ],
+          "median_solve_seconds": 0.00955389999990075,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "complete_14",
+          "n": 14,
+          "expected_minimum": -49.0,
+          "exact_minimum_ratio": "-49/1",
+          "oracle": "graph formula",
+          "oracle_seconds": 1.2999998943996616e-06,
+          "solve_seconds": [
+            0.019881299999724433,
+            0.01907970000002024,
+            0.018731900000148016,
+            0.01890270000012606,
+            0.01878519999991113
+          ],
+          "median_solve_seconds": 0.01890270000012606,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "sparse_maxcut_12",
+          "n": 12,
+          "expected_minimum": -15.0,
+          "exact_minimum_ratio": "-15/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.004512799999702111,
+          "solve_seconds": [
+            0.004728499999600899,
+            0.004677899999933288,
+            0.004719000000022788,
+            0.004684099999849423,
+            0.004665500000101019
+          ],
+          "median_solve_seconds": 0.004684099999849423,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "weak_penalty_one_hot",
+          "n": 3,
+          "expected_minimum": -12.0,
+          "exact_minimum_ratio": "-12/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 1.8900000213761814e-05,
+          "solve_seconds": [
+            4.820000003746827e-05,
+            3.199999991920777e-05,
+            2.4899999971239595e-05,
+            2.300000005561742e-05,
+            2.3100000362319406e-05
+          ],
+          "median_solve_seconds": 2.4899999971239595e-05,
+          "passed": false,
+          "issues": [
+            "missing feasible optimum (constraints_violated)"
+          ]
+        },
+        {
+          "case": "asymmetric_6",
+          "n": 6,
+          "expected_minimum": -18.0,
+          "exact_minimum_ratio": "-18/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 9.259999978894484e-05,
+          "solve_seconds": [
+            8.440000010523363e-05,
+            7.93999997767969e-05,
+            7.760000016787671e-05,
+            7.730000015726546e-05,
+            7.70000001466542e-05
+          ],
+          "median_solve_seconds": 7.760000016787671e-05,
+          "passed": false,
+          "issues": [
+            "reported=3.0, witness=3.0, expected=-18.0"
+          ]
+        },
+        {
+          "case": "asymmetric_7",
+          "n": 7,
+          "expected_minimum": -41.0,
+          "exact_minimum_ratio": "-41/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.00021089999972900841,
+          "solve_seconds": [
+            0.00015389999998660642,
+            0.0001494999996793922,
+            0.00014859999964755843,
+            0.00015220000022964086,
+            0.00014860000010230578
+          ],
+          "median_solve_seconds": 0.0001494999996793922,
+          "passed": true,
+          "issues": []
+        },
+        {
+          "case": "asymmetric_8",
+          "n": 8,
+          "expected_minimum": -23.0,
+          "exact_minimum_ratio": "-23/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.0004943999997522042,
+          "solve_seconds": [
+            0.00029140000015104306,
+            0.0002911000001404318,
+            0.0002899000000979868,
+            0.0003255000001445296,
+            0.0003056000000469794
+          ],
+          "median_solve_seconds": 0.00029140000015104306,
+          "passed": false,
+          "issues": [
+            "reported=-8.0, witness=-8.0, expected=-23.0"
+          ]
+        },
+        {
+          "case": "asymmetric_9",
+          "n": 9,
+          "expected_minimum": -31.0,
+          "exact_minimum_ratio": "-31/1",
+          "oracle": "scalar exhaustive integer oracle",
+          "oracle_seconds": 0.0011490000001685985,
+          "solve_seconds": [
+            0.0005959000000075321,
+            0.0005857000001014967,
+            0.0005823000001328182,
+            0.0005805000000691507,
+            0.0005825999996886821
+          ],
+          "median_solve_seconds": 0.0005825999996886821,
+          "passed": false,
+          "issues": [
+            "reported=-20.0, witness=-20.0, expected=-31.0"
+          ]
+        }
+      ]
+    }
+  ]
+}
