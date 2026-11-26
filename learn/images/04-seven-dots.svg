@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610" role="img" aria-labelledby="t d"><title id="t">A seven-dot coloring proof</title><desc id="d">Every pair of dots on the Fano diagram lies in one group of three. Seven mixed groups would give seven same-color pairs, but any two-color split of seven dots gives at least nine.</desc>
+<rect x="0" y="0" width="1000" height="610" rx="0" fill="#f9f8f2"/>
+<rect x="0" y="0" width="1000" height="8" rx="0" fill="#146b62"/>
+<text x="40" y="48" fill="#146b62" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" text-anchor="start" >D33 AI   /   QSP PUZZLE LAB</text>
+<text x="960" y="48" fill="#40585a" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="500" text-anchor="end" >04   /   THE HIDDEN PATTERN</text>
+<line x1="40" y1="65" x2="960" y2="65" stroke="#b8cbc3" stroke-width="1.6" stroke-linecap="round" />
+<text x="40" y="121" fill="#172e30" font-family="DejaVu Sans, sans-serif" font-size="38" font-weight="700" text-anchor="start" >Seven dots can expose a contradiction.</text>
+<text x="40" y="159" fill="#40585a" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400" text-anchor="start" >Try to give every group of three dots both colors. The circle is a group too.</text>
+<rect x="40" y="190" width="423" height="295" rx="18" fill="#eaf1e9"/>
+<line x1="254" y1="210.33333333333334" x2="133.91114400855784" y2="418.3333333333333" stroke="#637b73" stroke-width="2.8" stroke-linecap="round" />
+<line x1="133.91114400855784" y1="418.3333333333333" x2="374.0888559914422" y2="418.3333333333333" stroke="#637b73" stroke-width="2.8" stroke-linecap="round" />
+<line x1="374.0888559914422" y1="418.3333333333333" x2="254" y2="210.33333333333334" stroke="#637b73" stroke-width="2.8" stroke-linecap="round" />
+<line x1="254" y1="210.33333333333334" x2="254.0" y2="418.3333333333333" stroke="#637b73" stroke-width="2.8" stroke-linecap="round" />
+<line x1="133.91114400855784" y1="418.3333333333333" x2="314.0444279957211" y2="314.3333333333333" stroke="#637b73" stroke-width="2.8" stroke-linecap="round" />
+<line x1="374.0888559914422" y1="418.3333333333333" x2="193.9555720042789" y2="314.3333333333333" stroke="#637b73" stroke-width="2.8" stroke-linecap="round" />
+<circle cx="254" cy="349" r="69.33333333333333" fill="none" stroke="#637b73" stroke-width="2.8"/>
+<line x1="254" y1="210.33333333333334" x2="133.91114400855784" y2="418.3333333333333" stroke="#cf704d" stroke-width="5.5" stroke-linecap="round" />
+<path d="M254 197.33333333333334 l13 13 -13 13 -13 -13 Z" fill="#ed8a68" stroke="#172e30" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M133.91114400855784 405.3333333333333 l13 13 -13 13 -13 -13 Z" fill="#ed8a68" stroke="#172e30" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="374.0888559914422" cy="418.3333333333333" r="11" fill="#6eb8c1" stroke="#172e30" stroke-width="2.7"/>
+<path d="M193.9555720042789 301.3333333333333 l13 13 -13 13 -13 -13 Z" fill="#ed8a68" stroke="#172e30" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="254.0" cy="418.3333333333333" r="11" fill="#6eb8c1" stroke="#172e30" stroke-width="2.7"/>
+<circle cx="254" cy="349" r="11" fill="#6eb8c1" stroke="#172e30" stroke-width="2.7"/>
+<circle cx="314.0444279957211" cy="314.3333333333333" r="11" fill="#6eb8c1" stroke="#172e30" stroke-width="2.7"/>
+<text x="252" y="465" fill="#40585a" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="500" text-anchor="middle" >One group has three orange diamonds.</text>
+<text x="487" y="218" fill="#172e30" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="700" text-anchor="start" >Why every coloring fails</text>
+<text x="487" y="259" fill="#40585a" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="400" text-anchor="start" >If all 7 groups had both colors,</text>
+<text x="487" y="290" fill="#40585a" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="400" text-anchor="start" >each would have one matching pair.</text>
+<text x="487" y="330" fill="#146b62" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" text-anchor="start" >That would mean 7 matching pairs.</text>
+<text x="487" y="384" fill="#40585a" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="400" text-anchor="start" >Even the closest split, 3 and 4,</text>
+<text x="487" y="415" fill="#40585a" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="400" text-anchor="start" >makes 3 + 6 = 9 matching pairs.</text>
+<text x="487" y="459" fill="#146b62" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" text-anchor="start" >7 and 9 cannot both be right.</text>
+<rect x="40" y="507" width="920" height="80" rx="13" fill="#0e3939"/>
+<text x="60" y="539" fill="#fffef9" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" text-anchor="start" >The research solver found this pattern inside a 658-weight puzzle.</text>
+<text x="60" y="568" fill="#d7e9dc" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="400" text-anchor="start" >It proved the answer was NO. Each pair of dots belongs to exactly one group.</text>
+</svg>

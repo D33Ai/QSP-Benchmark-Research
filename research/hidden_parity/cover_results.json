@@ -1,0 +1,16 @@
+[
+  {
+    "width": 1,
+    "boundary_assignments": 128,
+    "local_patterns": 14,
+    "private_extensions_checked": 14,
+    "covered": true
+  },
+  {
+    "width": 3,
+    "boundary_assignments": 2097152,
+    "local_patterns": 896,
+    "private_extensions_checked": 896,
+    "covered": true
+  }
+]

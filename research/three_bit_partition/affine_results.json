@@ -1,0 +1,24 @@
+{
+  "random_tests": 600,
+  "yes": 367,
+  "no": 233,
+  "exhaustive_four_position_tests": 23211,
+  "exhaustive_yes": 1810,
+  "exhaustive_no": 21401,
+  "core_counts": {
+    "Fano": 0,
+    "cycle": 28
+  },
+  "chain_counts": {
+    "1": 6,
+    "2": 18,
+    "3": 54,
+    "4": 162,
+    "5": 486,
+    "6": 1458,
+    "7": 4374,
+    "8": 13122,
+    "9": 39366,
+    "10": 118098
+  }
+}

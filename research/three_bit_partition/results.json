@@ -1,0 +1,154 @@
+{
+  "local_boundary_patterns": 16,
+  "internal_patterns_per_boundary": 64,
+  "core_colorings_checked_per_family": 128,
+  "valid_macro_colorings": {
+    "Fano": 0,
+    "cycle": 28
+  },
+  "core_line_deletions_checked": 7,
+  "random_parity_maps_compared": 200,
+  "shuffled_numeric_instances": 36,
+  "integer_equality_witnesses": 18,
+  "direct_small_integer_checks": 6,
+  "parity_projection_checks": [
+    {
+      "width": 1,
+      "independent_restrictions_on_boundary": 0
+    },
+    {
+      "width": 3,
+      "independent_restrictions_on_boundary": 0
+    },
+    {
+      "width": 5,
+      "independent_restrictions_on_boundary": 0
+    },
+    {
+      "width": 9,
+      "independent_restrictions_on_boundary": 0
+    }
+  ],
+  "runs": [
+    {
+      "width": 1,
+      "family": "Fano",
+      "weights": 14,
+      "digit_positions": 7,
+      "boundary_bits": 7,
+      "ground_truth": false,
+      "method": "pair-count certificate",
+      "shuffles": 3
+    },
+    {
+      "width": 1,
+      "family": "cycle",
+      "weights": 14,
+      "digit_positions": 7,
+      "boundary_bits": 7,
+      "ground_truth": true,
+      "method": "integer witness",
+      "shuffles": 3
+    },
+    {
+      "width": 3,
+      "family": "Fano",
+      "weights": 175,
+      "digit_positions": 91,
+      "boundary_bits": 21,
+      "ground_truth": false,
+      "method": "pair-count certificate",
+      "shuffles": 3
+    },
+    {
+      "width": 3,
+      "family": "cycle",
+      "weights": 175,
+      "digit_positions": 91,
+      "boundary_bits": 21,
+      "ground_truth": true,
+      "method": "integer witness",
+      "shuffles": 3
+    },
+    {
+      "width": 5,
+      "family": "Fano",
+      "weights": 336,
+      "digit_positions": 175,
+      "boundary_bits": 35,
+      "ground_truth": false,
+      "method": "pair-count certificate",
+      "shuffles": 3
+    },
+    {
+      "width": 5,
+      "family": "cycle",
+      "weights": 336,
+      "digit_positions": 175,
+      "boundary_bits": 35,
+      "ground_truth": true,
+      "method": "integer witness",
+      "shuffles": 3
+    },
+    {
+      "width": 9,
+      "family": "Fano",
+      "weights": 658,
+      "digit_positions": 343,
+      "boundary_bits": 63,
+      "ground_truth": false,
+      "method": "pair-count certificate",
+      "shuffles": 3
+    },
+    {
+      "width": 9,
+      "family": "cycle",
+      "weights": 658,
+      "digit_positions": 343,
+      "boundary_bits": 63,
+      "ground_truth": true,
+      "method": "integer witness",
+      "shuffles": 3
+    },
+    {
+      "width": 21,
+      "family": "Fano",
+      "weights": 1624,
+      "digit_positions": 847,
+      "boundary_bits": 147,
+      "ground_truth": false,
+      "method": "pair-count certificate",
+      "shuffles": 3
+    },
+    {
+      "width": 21,
+      "family": "cycle",
+      "weights": 1624,
+      "digit_positions": 847,
+      "boundary_bits": 147,
+      "ground_truth": true,
+      "method": "integer witness",
+      "shuffles": 3
+    },
+    {
+      "width": 51,
+      "family": "Fano",
+      "weights": 4039,
+      "digit_positions": 2107,
+      "boundary_bits": 357,
+      "ground_truth": false,
+      "method": "pair-count certificate",
+      "shuffles": 3
+    },
+    {
+      "width": 51,
+      "family": "cycle",
+      "weights": 4039,
+      "digit_positions": 2107,
+      "boundary_bits": 357,
+      "ground_truth": true,
+      "method": "integer witness",
+      "shuffles": 3
+    }
+  ]
+}

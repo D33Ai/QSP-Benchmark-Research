@@ -1,0 +1,74 @@
+[
+  {
+    "family": "Fano",
+    "width": 1,
+    "expected": "unsat",
+    "z3": "unsat"
+  },
+  {
+    "family": "cycle",
+    "width": 1,
+    "expected": "sat",
+    "z3": "sat"
+  },
+  {
+    "family": "Fano",
+    "width": 3,
+    "expected": "unsat",
+    "z3": "unsat"
+  },
+  {
+    "family": "cycle",
+    "width": 3,
+    "expected": "sat",
+    "z3": "sat"
+  },
+  {
+    "family": "Fano",
+    "width": 5,
+    "expected": "unsat",
+    "z3": "unsat"
+  },
+  {
+    "family": "cycle",
+    "width": 5,
+    "expected": "sat",
+    "z3": "sat"
+  },
+  {
+    "family": "Fano",
+    "width": 9,
+    "expected": "unsat",
+    "z3": "unsat"
+  },
+  {
+    "family": "cycle",
+    "width": 9,
+    "expected": "sat",
+    "z3": "sat"
+  },
+  {
+    "family": "Fano",
+    "width": 21,
+    "expected": "unsat",
+    "z3": "unsat"
+  },
+  {
+    "family": "cycle",
+    "width": 21,
+    "expected": "sat",
+    "z3": "sat"
+  },
+  {
+    "family": "Fano",
+    "width": 51,
+    "expected": "unsat",
+    "z3": "unsat"
+  },
+  {
+    "family": "cycle",
+    "width": 51,
+    "expected": "sat",
+    "z3": "sat"
+  }
+]

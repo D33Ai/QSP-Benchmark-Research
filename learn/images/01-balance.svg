@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610" role="img" aria-labelledby="t d"><title id="t">Two equal piles of weights</title><desc id="d">A level balance holds weights 2 and 5 on one side and 3 and 4 on the other. Both weigh 7.</desc>
+<rect x="0" y="0" width="1000" height="610" rx="0" fill="#f9f8f2"/>
+<rect x="0" y="0" width="1000" height="8" rx="0" fill="#146b62"/>
+<text x="40" y="48" fill="#146b62" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" text-anchor="start" >D33 AI   /   QSP PUZZLE LAB</text>
+<text x="960" y="48" fill="#40585a" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="500" text-anchor="end" >01   /   THE PUZZLE</text>
+<line x1="40" y1="65" x2="960" y2="65" stroke="#b8cbc3" stroke-width="1.6" stroke-linecap="round" />
+<text x="40" y="121" fill="#172e30" font-family="DejaVu Sans, sans-serif" font-size="38" font-weight="700" text-anchor="start" >Can the two sides weigh the same?</text>
+<text x="40" y="159" fill="#40585a" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400" text-anchor="start" >Use every weight once. Try to give each side the same total.</text>
+<rect x="58" y="195" width="884" height="282" rx="24" fill="#edf1e9"/>
+<line x1="283" y1="369" x2="717" y2="369" stroke="#0e3939" stroke-width="8" stroke-linecap="round" />
+<path d="M 500 350 L 470 426 L 530 426 Z" fill="#146b62" stroke="#172e30" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="446" y="426" width="108" height="12" rx="5" fill="#0e3939"/>
+<path d="M 180 276 Q 180 252 196 252 Q 212 252 212 276" fill="none" stroke="#172e30" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M167,273 L225,273 L237,348 L155,348 Z" fill="#8ad7b8" stroke="#172e30" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="196" y="325" fill="#172e30" font-family="DejaVu Sans, sans-serif" font-size="37" font-weight="700" text-anchor="middle" >2</text>
+<path d="M 277 276 Q 277 252 293 252 Q 309 252 309 276" fill="none" stroke="#172e30" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M264,273 L322,273 L334,348 L252,348 Z" fill="#b4e4cd" stroke="#172e30" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="293" y="325" fill="#172e30" font-family="DejaVu Sans, sans-serif" font-size="37" font-weight="700" text-anchor="middle" >5</text>
+<path d="M 687 276 Q 687 252 703 252 Q 719 252 719 276" fill="none" stroke="#172e30" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M674,273 L732,273 L744,348 L662,348 Z" fill="#ffac86" stroke="#172e30" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="703" y="325" fill="#172e30" font-family="DejaVu Sans, sans-serif" font-size="37" font-weight="700" text-anchor="middle" >3</text>
+<path d="M 784 276 Q 784 252 800 252 Q 816 252 816 276" fill="none" stroke="#172e30" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M771,273 L829,273 L841,348 L759,348 Z" fill="#ffd0ac" stroke="#172e30" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="800" y="325" fill="#172e30" font-family="DejaVu Sans, sans-serif" font-size="37" font-weight="700" text-anchor="middle" >4</text>
+<path d="M 130 350 L 359 350 L 337 370 L 152 370 Z" fill="#0e3939"/>
+<path d="M 637 350 L 866 350 L 844 370 L 659 370 Z" fill="#0e3939"/>
+<text x="245" y="225" fill="#40585a" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="middle" >LEFT SIDE</text>
+<text x="753" y="225" fill="#40585a" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" text-anchor="middle" >RIGHT SIDE</text>
+<text x="245" y="425" fill="#172e30" font-family="DejaVu Sans, sans-serif" font-size="31" font-weight="700" text-anchor="middle" >2 + 5 = 7</text>
+<text x="753" y="425" fill="#172e30" font-family="DejaVu Sans, sans-serif" font-size="31" font-weight="700" text-anchor="middle" >3 + 4 = 7</text>
+<rect x="40" y="507" width="920" height="80" rx="13" fill="#0e3939"/>
+<text x="60" y="539" fill="#fffef9" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700" text-anchor="start" >Checking is easy once you see a split.</text>
+<text x="60" y="568" fill="#d7e9dc" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="400" text-anchor="start" >Now try three weights of 2. Each side would need 3. Can any pile of twos make 3?</text>
+</svg>
